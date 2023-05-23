@@ -161,6 +161,7 @@ function App() {
             {weatherIcon !== "" && (
               <img
                 src={`https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v8/Condition_Card/${weatherIcon}`}
+                alt="Weather icon which shows the type of current weather"
               />
             )}
 
