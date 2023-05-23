@@ -48,7 +48,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (currentHour !== "" && currentHour > 19) {
+    if (currentHour !== "" && currentHour >= 19) {
       setWeatherIcon("ClearNightV3.svg");
     } else if (currentHour !== "" && currentHour < 19) {
       setWeatherIcon("SunnyDayV3.svg");
