@@ -28,7 +28,7 @@ function App() {
     if (userSearch !== "") {
       try {
         fetch(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${userSearch}&limit=1&appid=d64ce91bca2b8bd1d81cc2bebf950447`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${userSearch}&limit=1&appid=d64ce91bca2b8bd1d81cc2bebf950447`
         )
           .then((res) => res.json())
           .then(([geoData]) => {
