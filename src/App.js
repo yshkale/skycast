@@ -102,7 +102,7 @@ function App() {
     if (latitude !== "" && longitude !== "") {
       try {
         fetch(
-          `http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=d64ce91bca2b8bd1d81cc2bebf950447`
+          `https://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=d64ce91bca2b8bd1d81cc2bebf950447`
         )
           .then((res) => res.json())
           .then((data) => {
