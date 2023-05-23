@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  margin: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  font-size: 0.7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-weather {
+  margin-bottom: 4px;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+  font-weight: 600;
+}
+
+.main-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.degree {
+  font-size: 2.4rem;
+  margin-right: 15px;
+}
+
+.weather-type {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  margin: 30px 0;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  margin: 20px 0;
+}
+
+.info-title {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 20px;
+  gap: 10px;
+}
+
+.search-input {
+  font-family: "Inter", sans-serif;
+  padding: 10px 18px;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-input::placeholder {
+  color: #a3a3a3;
+}
+
+.search-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 20px;
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 50px 0 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-info {
+  font-size: 0.7rem;
+  color: #fafafa;
 }

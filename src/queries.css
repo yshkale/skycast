@@ -1,0 +1,30 @@
+@media (min-width: 64em) {
+  body {
+    font-size: 100%;
+  }
+
+  .header {
+    margin: 20px 200px;
+  }
+
+  .main-container {
+    margin: 100px 500px 80px 500px;
+    font-size: 1rem;
+  }
+
+  .search-container {
+    margin: 0 500px;
+  }
+
+  .search-btn {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    margin: 90px 0 20px 0;
+  }
+
+  .footer-info {
+    font-size: 1rem;
+  }
+}
